@@ -4,6 +4,8 @@ const {
     CleanWebpackPlugin
 } = require('clean-webpack-plugin')
 
+debugger
+
 // 书写webpack的配置
 const webpackconfig = {
     target: 'node',
@@ -59,6 +61,8 @@ const webpackconfig = {
         path: true
     }
 }
+
+console.log(webpackconfig)
 
 module.exports = webpackconfig
 
