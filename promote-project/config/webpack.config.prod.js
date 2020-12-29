@@ -31,6 +31,16 @@ const webpackConfig = webpackMerge(baseWebpackConfig, {
                 sourceMap: false,
             })
         ],
+        splitChunks: {
+            cacheGroups: {
+                commons: {
+                    name: 'commons',
+                    chunks: 'initial',
+                    minChunks: 3,
+                    enforce: true
+                }
+            }
+        }
     },
 })
 
